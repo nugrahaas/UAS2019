@@ -6,7 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTES"
+        android:gravity="center_horizontal"
+        android:textSize="50dp"
+
+        />
+
     <ListView
+        android:layout_below="@id/tv_title"
         android:layout_above="@id/floating_button"
         android:layout_margin="20dp"
         android:id="@+id/list_view_notes"
