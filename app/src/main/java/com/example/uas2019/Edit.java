@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -21,10 +22,14 @@ public class Edit extends AppCompatActivity {
 
     EditText editTextJudul, editTextDeskripsi;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
+
+
     }
 
     private boolean updateArtist(String id, String tanggal, String judul, String desk) {
@@ -94,4 +99,12 @@ public class Edit extends AppCompatActivity {
     }
 
 
+    public void editNotes(View view) {
+        String judul = editTextJudul.getText().toString().trim();
+        String desk = editTextDeskripsi.getText().toString().trim();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
+        final String currentDateandTime = sdf.format(new Date());
+        
+
+    }
 }

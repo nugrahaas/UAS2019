@@ -33,6 +33,7 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:onClick="editNotes"
         android:layout_marginTop="40dp"
         android:layout_below="@id/et_desk"
         android:id="@+id/btn_edit"
