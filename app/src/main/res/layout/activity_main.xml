@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:layout_above="@id/floating_button"
+        android:layout_margin="20dp"
+        android:id="@+id/list_view_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <Button
+        android:onClick="tambahNotes"
+        android:id="@+id/floating_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#004ED4"
+        android:text=" + ADD NOTES"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        />
+</RelativeLayout>
